@@ -1,26 +1,17 @@
 @import "tailwindcss";
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeUp { animation: fadeUp 650ms ease forwards; }
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@keyframes kenburns {
+  from { transform: scale(1.03); }
+  to   { transform: scale(1.1); }
+}
+.animate-kenburns {
+  animation: kenburns 12s ease-in-out forwards;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
