@@ -5,6 +5,7 @@ import PromoBanner from '../components/Promobanner';
 import WhyChooseUs from '@/components/Whychooseus';
 import News from '../components/News';
 import Projects from '../components/Project';
+import Blog from '../components/Blog';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Services/>
       <PromoBanner/>
       <WhyChooseUs/>
+      <Blog/>
       <Projects/>
       <News/>
     </main>
